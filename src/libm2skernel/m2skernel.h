@@ -157,6 +157,11 @@ struct regs_t {
 	/* Protected mode registers */
 	unsigned int cr0, cr1, cr2, cr3, cr4;
 
+	struct {
+		uint16_t limit;
+		uint32_t base;
+	} __attribute__((packed)) idtr;
+
 } __attribute__((packed));
 
 /* Bit masks for protected mode control registers */

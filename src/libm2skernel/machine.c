@@ -1175,3 +1175,10 @@ void op_xchg_rm32_r32_impl()
 	isa_store_r32(rm32);
 }
 
+void op_lidt_impl()
+{
+	mem_read(isa_mem, isa_effective_address(), sizeof(isa_regs->idtr), &(isa_regs->idtr));
+	isa_inst_debug("  [0x%x]=0x%x", isa_effective_address(), isa_regs->idtr);
+	printf ("%x %x\n", (isa_regs->idtr).base, (isa_regs->idtr).limit);
+}
+

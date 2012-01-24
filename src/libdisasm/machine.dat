@@ -601,3 +601,5 @@ DEFINST(xchg_rm8_r8, 0x86, SKIP, REG, SKIP, 0)
 DEFINST(xchg_rm16_r16, 0x87, SKIP, REG, SKIP, prefix_op)
 DEFINST(xchg_rm32_r32, 0x87, SKIP, REG, SKIP, 0)
 
+DEFINST(lidt, 0x0f, 0x01, 3, SKIP, 0)
+

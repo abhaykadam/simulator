@@ -55,6 +55,7 @@ typedef enum {
 	reg_ax, reg_cx, reg_dx, reg_bx, reg_sp, reg_bp, reg_si, reg_di,
 	reg_al, reg_cl, reg_dl, reg_bl, reg_ah, reg_ch, reg_dh, reg_bh,
 	reg_es, reg_cs, reg_ss, reg_ds, reg_fs, reg_gs,
+	reg_idtr,
 	x86_register_count
 } x86_register_t;
 extern char *x86_register_name[x86_register_count];

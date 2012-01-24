@@ -189,7 +189,7 @@ enum{
 	TSD=0x00000004, /* time stamp disabled */
 	DE =0x00000008,	/* debugging extensions */
 	PSE=0x00000010,	/* allows 4MB pages when set */
-	MCE=0x00000040
+	MCE=0x00000040	/* machine check extensions */
 };
 
 struct regs_t *regs_create(void);
